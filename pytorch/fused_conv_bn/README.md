@@ -15,6 +15,11 @@ model = fuse_conv_bn(model)
 
 --cfg-options efficient_conv_bn_eval="[backbone]"
 
+
+# BN在前和conv 融合，BN 转conv
+![alt text](image.png)
+[ppq code](https://github.com/OpenPPL/ppq/blob/master/tests/testBnToConv.py)
+
 ## other 
 https://mmengine.readthedocs.io/en/latest/common_usage/save_gpu_memory.html
 https://github.com/open-mmlab/mmengine/discussions/1252
